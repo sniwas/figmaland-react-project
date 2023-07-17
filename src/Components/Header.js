@@ -20,13 +20,10 @@ export default function Header(){
             <FigmaLogo />
           </a>
           <div className="flex md:order-2">
-            <button
-            onClick={handleLogin}
-              type="button"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Login
-            </button>
+          <button className=" w-40 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white text-lg transition-colors duration-700 transform  hover:border-4">
+            Login
+          </button>
+     
             <div className=" relative">
             <button
             onClick={handleMenu}

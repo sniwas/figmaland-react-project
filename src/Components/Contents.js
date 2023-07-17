@@ -17,20 +17,20 @@ export default function Contents() {
 
       <div className="flex flex-col items-center justify-center ">
         <div className="flex flex-col lg:flex-row justify-center lg:space-x-10 p-10 space-y-5 lg:space-y-0">
-          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
             <div className="p-5">
-              <h5 className="mb-2 text-center text-2xl font-medium tracking-tight text-black dark:text-white">
+              <h5 className="mb-2 text-center text-2xl font-medium tracking-tight text-black ">
                 Work
               </h5>
 
-              <p className="mb-3 text-center pl-10 pr-10 font-normal text-gray-400 dark:text-gray-400">
+              <p className="mb-3 text-center pl-10 pr-10 font-normal text-gray-400 ">
                 Ever wondered if you're too reliant on a client for work? Slate
                 helps you identify .
               </p>
               <div className="flex justify-center m-10">
                 <a
                   href="/signup"
-                  className="justify-center w-36 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className="justify-center w-36 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                 >
                   Sign Up
                 </a>
@@ -44,20 +44,20 @@ export default function Contents() {
               </div>
             </div>
           </div>
-          <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-sm  bg-white border border-gray-200 rounded-lg shadow  ">
             <div className="p-5">
-              <h5 className="mb-2 text-center text-2xl font-medium tracking-tight text-black dark:text-white">
+              <h5 className="mb-2 text-center text-2xl font-medium tracking-tight text-black ">
                 Design with real data
               </h5>
 
-              <p className="mb-3 text-center pl-10 pr-10 font-normal text-gray-400 dark:text-gray-400">
+              <p className="mb-3 text-center pl-10 pr-10 font-normal text-gray-400 ">
                 Ever wondered if you're too reliant on a client for work? Slate
                 helps you identify .
               </p>
               <div className="flex justify-center m-10">
                 <a
                   href="/signup"
-                  className=" w-36 justify-center inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  className=" w-36 justify-center inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
                 >
                   Try For Free
                 </a>

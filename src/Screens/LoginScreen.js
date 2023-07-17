@@ -3,37 +3,40 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function LoginScreen() {
-    const navigation=useNavigate();
+  const navigation = useNavigate();
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [password, setPassword] = useState("");
   const [isValidPassword, setIsValidPassword] = useState(true);
-  const [name,setName]=useState("");
-  const[logins,setLogins]=useState(false);
-  const [checkpass,setcheckpass]=useState("");
+  const [name, setName] = useState("");
+  const [logins, setLogins] = useState(false);
+  const [checkpass, setcheckpass] = useState("");
   // const {setrefresh,setapptoken}=useContext(createContext({}));
 
-  const baseURL = "getuser/"+name;
-  function readUser(){
-    axios.get(baseURL,
-      {
+  const baseURL = "getuser/" + name;
+  function readUser() {
+    axios
+      .get(baseURL, {
         userName: name,
-      
-    }).then((response) => {
-      setcheckpass(response.data.Item.password);
-      console.log(password);
-      console.log(checkpass);
-      if(password===checkpass){
+      })
+      .then((response) => {
+        setcheckpass(response.data.Item.password);
+        console.log(password);
+        console.log(checkpass);
+        if (password === checkpass) {
           setLogins(true);
           console.log(logins);
-      }
-    }).catch((error)=>{console.log(error)});
-}
-  const handleNameChange=(e)=>{
-    const inputname=e.target.value;
-   
-    setName(inputname);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
+  const handleNameChange = (e) => {
+    const inputname = e.target.value;
+
+    setName(inputname);
+  };
 
   const handleEmailChange = (e) => {
     const inputEmail = e.target.value;
@@ -50,20 +53,18 @@ export default function LoginScreen() {
     const isValid = passRegex.test(inputPassword);
     setIsValidPassword(isValid);
   };
-  const handleSignIn=(e)=>{
-        if(name && password && isValidPassword){
-          console.log(name);
-            readUser();
-            if(logins){
-          navigation('/home');}
-          else{
-            window.alert("Invalid Email/Password")
-            
-          }
-        }
-        else{
-            window.alert("Invalid Email/Password")
-        }
+  const handleSignIn = (e) => {
+    if (name && password && isValidPassword) {
+      console.log(name);
+      readUser();
+      if (logins) {
+        navigation("/home");
+      } else {
+        window.alert("Invalid Email/Password");
+      }
+    } else {
+      window.alert("Invalid Email/Password");
+    }
   };
 
   return (
