@@ -20,7 +20,7 @@ export default function Header(){
             <FigmaLogo />
           </a>
           <div className="flex md:order-2">
-          <button className=" w-40 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white text-lg transition-colors duration-700 transform  hover:border-4">
+          <button className=" w-28 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white text-lg transition-colors duration-700 transform  hover:border-4">
             Login
           </button>
      
