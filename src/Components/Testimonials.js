@@ -8,7 +8,7 @@ export default function Testimonials() {
     <div className="md:p-20 mb-10">
       <div className="bg-black flex items-center justify-center">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">
             Testimonials
           </h1>
         </div>
@@ -21,7 +21,7 @@ export default function Testimonials() {
                 <div className=" mx-auto lg:max-w-7xl mt-3 ">
                   <div className="max-w-7xl mx-auto px-5 mb-3">
                     <div className="mt-6 grid  gap-y-10 gap-x-6  xl:gap-x-8">
-                      <div className="max-w-xl bg-black rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                      <div className="max-w-xl bg-black rounded-lg border border-gray-200 shadow-md ">
                         <div className="flex p-5 items-center flex-row">
                           <img
                             className="w-12 h-12  rounded-full shadow-lg"
@@ -59,7 +59,7 @@ export default function Testimonials() {
                 <div className=" mx-auto lg:max-w-7xl mt-3 ">
                   <div className="max-w-7xl mx-auto px-5 mb-3">
                     <div className="mt-6 grid  gap-y-10 gap-x-6  xl:gap-x-8">
-                      <div className="max-w-xl bg-black rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                      <div className="max-w-xl bg-black rounded-lg border border-gray-200 shadow-md ">
                         <div className="flex p-5 items-center flex-row">
                           <img
                             className="w-12 h-12  rounded-full shadow-lg"

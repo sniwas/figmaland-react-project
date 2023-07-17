@@ -7,7 +7,7 @@ export default function OpenType() {
         <div className="md:bg-gray-800 md:rounded-2xl md:flex-row flex md:justify-normal justify-center items-center text-center flex-col">
           <div className="flex flex-col justify-center text-center items-center space-y-6 w-1/2">
             <div className=" flex-col md:text-left md:pl-10 md:pr-10 md:justify-start justify-center items-center text-center space-y-5">
-              <h1 className="block md:w-fit lg:w-80 lg:tracking-wide text-2xl  font-normal leading-12 tracking-tight md:text-justify leading-none  text-white md:text-3xl lg:text-4xl dark:text-white">
+              <h1 className="block md:w-fit lg:w-80 lg:tracking-wide text-2xl  font-normal leading-12 tracking-tight md:text-justify leading-none  text-white md:text-3xl lg:text-4xl ">
                 OpenType feature and Variable fonts
               </h1>
               <a

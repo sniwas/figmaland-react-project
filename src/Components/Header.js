@@ -29,7 +29,7 @@ export default function Header(){
             onClick={handleMenu}
               data-collapse-toggle="navbar-sticky"
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 "
               aria-controls="navbar-sticky"
               aria-expanded={menu}
             >
@@ -84,7 +84,7 @@ export default function Header(){
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-black ">
               <li>
                 <a
                   href="#"
@@ -97,7 +97,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 dark:text-white "
+                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0  "
                 >
                   Product
                 </a>
@@ -106,7 +106,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 dark:text-white "
+                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
                 >
                   About
                 </a>
@@ -114,7 +114,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 dark:text-white "
+                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
                 >
                   Contact
                 </a>
