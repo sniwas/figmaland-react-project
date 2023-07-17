@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Contents() {
   return (
-    <>
+    <div className="p-20">
       <div className="bg-black flex items-center justify-center">
-        <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
+        <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 ">
           <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">
             Contents
           </h1>
@@ -72,6 +72,6 @@ export default function Contents() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
