@@ -15,11 +15,11 @@ export default function WelcomeScreen() {
   const navigate = useNavigate();
   return (
     <div className=" bg-black overflow-auto">
-      <nav className="block overflow-auto bg-black dark:bg-gray-900 fixed h-full w-full z-20 top-0 md-block:pl-52 md-block:pr-52 left-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className="block overflow-auto bg-black  fixed h-full w-full z-20 top-0 md-block:pl-52 md-block:pr-52 left-0 border-b border-gray-200 ">
         <Header />
         <div className="bg-black flex items-center justify-center gap-y-16">
           <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 pt-20 pb-20">
-            <h1 className="block mb-4 pl-20 pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white">
+            <h1 className="block mb-4 pl-20 pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">
               Work at the speed of thought
             </h1>
             <p className="text-white pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
