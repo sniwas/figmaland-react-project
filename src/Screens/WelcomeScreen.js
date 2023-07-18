@@ -11,18 +11,17 @@ import Intro from "../Components/Intro";
 
 export default function WelcomeScreen() {
   return (
-    
     <div className=" bg-black overflow-auto">
       <nav className="block overflow-auto bg-black  fixed h-full w-full z-20 top-0 md-block:pl-52 md-block:pr-52 left-0 border-b border-gray-200 ">
         <Header />
-        <Intro/>
-        <Features/>
-        <Contents/>
-        <Gallery/>
-        <Partners/>
-        <Testimonials/>
-        <OpenType/>
-        <Fotter/>
+        <Intro />
+        <Features />
+        <Contents />
+        <Gallery />
+        <Partners />
+        <Testimonials />
+        <OpenType />
+        <Fotter />
       </nav>
     </div>
   );

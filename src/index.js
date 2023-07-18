@@ -1,42 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import reportWebVitals from './reportWebVitals';
-import WelcomeScreen from './Screens/WelcomeScreen';
-import LoginScreen from './Screens/LoginScreen';
-import SignUpScreen from './Screens/SignUpScreen';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import WelcomeScreen from "./Screens/WelcomeScreen";
+import LoginScreen from "./Screens/LoginScreen";
+import SignUpScreen from "./Screens/SignUpScreen";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<WelcomeScreen/>
+    element: <WelcomeScreen />,
   },
   {
-    path:"/login",
-    element:<LoginScreen/>
+    path: "/login",
+    element: <LoginScreen />,
   },
   {
-    path:"/home",
-    element:<></>
+    path: "/home",
+    element: <></>,
   },
   {
-    path:"/forgotpassword",
-    element:<></>
+    path: "/forgotpassword",
+    element: <></>,
   },
   {
-    path:"/signup",
-    element:<SignUpScreen/>
+    path: "/signup",
+    element: <SignUpScreen />,
   },
 ]);
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

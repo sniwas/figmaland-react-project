@@ -3,31 +3,36 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function SignUpScreen() {
-    const navigation=useNavigate();
+  const navigation = useNavigate();
   const [email, setEmail] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true);
   const [password, setPassword] = useState("");
   const [isValidPassword, setIsValidPassword] = useState(true);
-  const [name,setName]=useState("");
+  const [name, setName] = useState("");
+  const [isValidUsername, setisValidUsername] = useState(true);
   const [post, setPost] = React.useState(null);
-  const [signup,setSignup]=useState(false);
+  const [signup, setSignup] = useState(false);
 
   const baseURL = "create";
   const handleNameChange = (e) => {
-        const inputName=e.target.value;
-        setName(inputName);
-  }
+    const inputName = e.target.value;
+    setName(inputName);
+    setisValidUsername(/^[a-z0-9]{5,}$/.test(inputName));
+  };
   function createPost() {
     axios
       .post(baseURL, {
-          "userName": name,
-          "email":  email,
-          "password":  password,
+        userName: name,
+        email: email,
+        password: password,
       })
       .then((response) => {
         setPost(response.data);
         setSignup(true);
-      }).catch((error)=>{console.log(error)});
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
   const handleEmailChange = (e) => {
     const inputEmail = e.target.value;
@@ -44,16 +49,23 @@ export default function SignUpScreen() {
     const isValid = passRegex.test(inputPassword);
     setIsValidPassword(isValid);
   };
-  const handleSignUp=(e)=>{
-        if(name && email && password && isValidEmail && isValidPassword){
-          createPost(); 
-          if(signup){ 
-          navigation('/login');
-          }
-        }
-        else{
-            window.alert("Enter proper Name/Email/Password")
-        }
+
+  const handleSignUp = (e) => {
+    if (
+      name &&
+      email &&
+      password &&
+      isValidEmail &&
+      isValidPassword &&
+      isValidUsername
+    ) {
+      createPost();
+      if (signup) {
+        navigation("/login");
+      }
+    } else {
+      window.alert("Enter proper Name/Email/Password");
+    }
   };
 
   return (
@@ -68,16 +80,23 @@ export default function SignUpScreen() {
             ></img>
           </div>
           <div className="flex md:w-96 flex-col text-sm rounded-md">
-          <h1 className=" text-white pb-2">Enter Name :</h1>
+            <h1 className=" text-white pb-2">Enter Username :</h1>
             <input
               className=" border rounded-[4px] p-3 hover:outline-none focus:outline-none "
               type="text"
-              placeholder="Name"
+              placeholder="Username"
               value={name}
               onChange={handleNameChange}
-              
             />
-             <p className="pb-9"></p>
+            {!isValidUsername ? (
+              <p className="text-red-500 w-60 md:w-96">
+                Invalid Username - No special characters and uppercase allowed
+                and minimum 5 characters required.
+              </p>
+            ) : (
+              <p className="pb-5"></p>
+            )}
+            <p className="pb-4"></p>
             <h1 className=" text-white pb-2">Enter Email Id :</h1>
             <input
               className="rounded-[4px] border p-3 hover:outline-none focus:outline-none"
@@ -110,7 +129,6 @@ export default function SignUpScreen() {
               <p className="pb-5"></p>
             )}
             <p className="pb-4"></p>
-            
           </div>
           <button
             className="mt-5 w-full border p-2 bg-gradient-to-r  text-white rounded-[4px] hover:bg-slate-400 scale-105 duration-300"
@@ -120,7 +138,12 @@ export default function SignUpScreen() {
             Sign Up
           </button>
           <div className="mt-5 flex justify-center  text-sm text-white">
-            <p>Already have an account ? <a href="/login" className="underline">Log In</a></p>
+            <p>
+              Already have an account ?{" "}
+              <a href="/login" className="underline">
+                Log In
+              </a>
+            </p>
           </div>
         </div>
       </div>
