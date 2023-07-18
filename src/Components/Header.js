@@ -15,12 +15,12 @@ export default function Header(){
   };
     return(
         <>
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  pb-4 pt-4">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto  p-4">
           <a href="#" className="flex flex-wrap items-center justify-center">
             <FigmaLogo />
           </a>
-          <div className="flex md:order-2">
-          <button onClick={handleLogin} className=" w-28 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white font-graphik  text-lg transition-colors duration-700 transform  hover:border-4">
+          <div className="flex md:order-2 space-x-2 md:space-x-0">
+          <button onClick={handleLogin} className=" w-28  pl-5 pr-5 bg-transparent border-2 border-white text-white font-graphik  text-lg transition-colors duration-700 transform  hover:border-4">
             Login
           </button>
      

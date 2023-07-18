@@ -5,11 +5,11 @@ export default function Intro() {
   return (
     <div>
       <div className="bg-black flex items-center justify-center gap-y-16">
-        <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 pt-20 pb-20">
-          <h1 className="block mb-4 pl-20 font-graphik pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80 text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">
+        <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4 pt-10 pb-10 md:pt-20 md:pb-20">
+          <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
             Work at the speed of thought
           </h1>
-          <p className="text-white font-graphik  pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
+          <p className="text-white font-graphik px-12 mx-2.5 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
@@ -29,7 +29,7 @@ export default function Intro() {
 
       <div className="flex justify-center">
         <div
-          className="flex justify-center items-center content-center bg-black pb-36"
+          className="flex justify-center items-center content-center bg-black  md:pb-36"
           style={{ width: 1150 }}
         >
           <div className="block sm:hidden bg-black">

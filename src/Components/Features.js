@@ -3,24 +3,34 @@ import React from "react";
 export default function Features() {
   return (
     <>
-      <div className="bg-black flex items-center justify-center w-screen">
+      <div className="bg-black flex items-center justify-center w-screen pt-28 md:pt-0">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-6  mt-6  text-4xl font-semibold leading-none tracking-tight text-white font-graphik  md:text-5xl lg:text-6xl ">
+          <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-tight  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
             FEATURES
           </h1>
-          <p className="text-white font-graphik  pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
+          <p className="text-white font-graphik  px-12 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
         </div>
       </div>
-      <div className="bg-black  flex grid-col-2 flex-col m-10  lg:pl-32 lg:pr-32 lg:flex-row justify-center">
-        <div className="flex justify-end">
-          <img src={require("../photos/screen2.png")}
-          alt="Image2" className="w-fill lg:mt-2 h-auto"></img>
+      <div className="bg-black  flex grid-col-2 flex-col m-14  lg:pl-32 lg:pr-32 lg:flex-row justify-center">
+        <div className="block md:hidden justify-end">
+          <img
+            src={require("../photos/features_mobile.png")}
+            alt="Image2"
+            className="w-fill lg:mt-2 h-auto"
+          ></img>
         </div>
-        <div className="w-fill ml-16 lg:ml-8 mt-8 mb-8 justify-center lg:mt-24 lg:mr-16 space-y-4">
-          <ul className="flex flex-col items-center space-y-8">
+        <div className="hidden md:block  justify-end">
+          <img
+            src={require("../photos/screen2.png")}
+            alt="Image2"
+            className="w-fit lg:mt-2 h-auto"
+          ></img>
+        </div>
+        <div className="md:w-fill w-fit md:pl-0 pl-5 lg:ml-8 my-8 justify-center lg:mt-24 lg:mr-16 space-y-4">
+          <ul className="flex flex-col items-center space-y-16">
             <li className="  text-white font-graphik  items-center">
               <div className="flex flex-row">
                 <svg

@@ -7,7 +7,7 @@ module.exports = {
         '90': '90px',
       },
         fontFamily: {
-          graphik: ['Graphik', 'sans-serif'],
+          graphik: ['graphik', 'sans-serif'],
         },
     },
   },

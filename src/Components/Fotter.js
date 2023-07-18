@@ -3,11 +3,13 @@ import React from "react";
 export default function Fotter() {
   return (
     <div>
-      <footer className="md:p-20 p-5">
+      <footer className="md:p-20 pl-20 pt-20 pb-20">
         <div className="bg-black mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-1 px-1 py-6 lg:py-8 md:grid-cols-4">
-            <div>
-              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">Fingertipe</h2>
+            <div className="md:pb-0 pb-10">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">
+                Fingertipe
+              </h2>
               <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
@@ -31,8 +33,10 @@ export default function Fotter() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">Resources</h2>
+            <div className="md:pb-0 pb-10">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">
+                Resources
+              </h2>
               <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
@@ -56,8 +60,10 @@ export default function Fotter() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h2 className="mb-6 text-xl font-medium text-white font-graphik ">About</h2>
+            <div className="md:pb-0 pb-10">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik ">
+                About
+              </h2>
               <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
@@ -84,20 +90,40 @@ export default function Fotter() {
 
             <div>
               <ul className="text-white font-graphik  font-normal">
-                <li className="mb-4 flex flex-row">
-                  <svg
-                    width="32"
-                    height="40"
-                    viewBox="0 0 32 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.8885 38.8806C15.2129 39.1123 15.6015 39.2368 16.0001 39.2368C16.3987 39.2368 16.7874 39.1123 17.1118 38.8806C17.6945 38.4686 31.389 28.5805 31.3335 16.2371C31.3335 7.78273 24.4545 0.903809 16.0001 0.903809C7.54571 0.903809 0.666795 7.78272 0.666795 16.2276C0.611211 28.5805 14.3058 38.4686 14.8885 38.8806ZM16.0001 4.73714C22.3424 4.73714 27.5001 9.89489 27.5001 16.2467C27.5404 24.7529 19.0898 32.3908 16.0001 34.8959C12.9124 32.3889 4.45988 24.7491 4.50013 16.2371C4.50013 9.89489 9.65788 4.73714 16.0001 4.73714Z"
-                      fill="white"
-                    />
-                  </svg>
-                  <p className="pl-5">7480 Mockingbird Hill undefined</p>
+                <li className="mb-4 flex flex-row items-center">
+                  <div className="block md:hidden">
+                    <svg
+                      width="36"
+                      height="47"
+                      viewBox="0 0 46 47"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M23 27.3353C27.2282 27.3353 30.6667 23.8968 30.6667 19.6686C30.6667 15.4405 27.2282 12.002 23 12.002C18.7718 12.002 15.3333 15.4405 15.3333 19.6686C15.3333 23.8968 18.7718 27.3353 23 27.3353ZM23 15.8353C25.1141 15.8353 26.8333 17.5545 26.8333 19.6686C26.8333 21.7827 25.1141 23.502 23 23.502C20.8859 23.502 19.1667 21.7827 19.1667 19.6686C19.1667 17.5545 20.8859 15.8353 23 15.8353Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M21.8884 42.3118C22.2128 42.5435 22.6014 42.668 23.0001 42.668C23.3987 42.668 23.7873 42.5435 24.1117 42.3118C24.6944 41.8997 38.389 32.0116 38.3334 19.6683C38.3334 11.2139 31.4545 4.33496 23.0001 4.33496C14.5457 4.33496 7.66673 11.2139 7.66673 19.6587C7.61115 32.0116 21.3057 41.8997 21.8884 42.3118ZM23.0001 8.16829C29.3423 8.16829 34.5001 13.326 34.5001 19.6779C34.5403 28.184 26.0897 35.822 23.0001 38.327C19.9123 35.82 11.4598 28.1802 11.5001 19.6683C11.5001 13.326 16.6578 8.16829 23.0001 8.16829Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <div className="hidden md:block">
+                    <svg
+                      width="32"
+                      height="40"
+                      viewBox="0 0 32 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.8885 38.8806C15.2129 39.1123 15.6015 39.2368 16.0001 39.2368C16.3987 39.2368 16.7874 39.1123 17.1118 38.8806C17.6945 38.4686 31.389 28.5805 31.3335 16.2371C31.3335 7.78273 24.4545 0.903809 16.0001 0.903809C7.54571 0.903809 0.666795 7.78272 0.666795 16.2276C0.611211 28.5805 14.3058 38.4686 14.8885 38.8806ZM16.0001 4.73714C22.3424 4.73714 27.5001 9.89489 27.5001 16.2467C27.5404 24.7529 19.0898 32.3908 16.0001 34.8959C12.9124 32.3889 4.45988 24.7491 4.50013 16.2371C4.50013 9.89489 9.65788 4.73714 16.0001 4.73714Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <p className="pl-2">7480 Mockingbird Hill undefined</p>
                 </li>
                 <li className="mb-4 flex flex-row ">
                   <svg

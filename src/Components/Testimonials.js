@@ -5,11 +5,11 @@ export default function Testimonials() {
   const mdViewsItems = TestimonialsList.slice(0, 4); // First four items for LG views
   const smallerViewsItems = TestimonialsList.slice(4);
   return (
-    <div className="md:p-20 mb-10">
+    <div className="md:p-20 mx-5 pb-20">
       <div className="bg-black flex items-center justify-center">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-6  mt-6 text-4xl font-semibold leading-none tracking-tight text-white font-graphik  md:text-5xl lg:text-6xl ">
-            Testimonials
+        <h1 className="block mb-4 pl-16 pr-16 md:pl-20 font-graphik text-5xl font-normal leading-16 tracking-wide  md:pr-20 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  leading-none  text-white md:text-5xl lg:text-6xl ">
+          Testimonials
           </h1>
         </div>
       </div>
@@ -51,14 +51,14 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden mx-auto lg:max-w-7xl mt-3">
+      <div className="block md:hidden mx-auto lg:max-w-7xl">
         <div className="max-w-7xl mx-auto px-5 mb-3">
-          <div className="mt-2 lg:pl-40 lg:pr-40 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
+          <div className=" lg:pl-40 lg:pr-40 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8">
             {smallerViewsItems.map((item) => (
               <li key={item.id}>
-                <div className=" mx-auto lg:max-w-7xl mt-3 ">
+                <div className=" mx-auto lg:max-w-7xl ">
                   <div className="max-w-7xl mx-auto px-5 mb-3">
-                    <div className="mt-6 grid  gap-y-10 gap-x-6  xl:gap-x-8">
+                    <div className=" grid  gap-y-10 gap-x-6  xl:gap-x-8">
                       <div className="max-w-xl bg-black rounded-lg border border-gray-200 shadow-md ">
                         <div className="flex p-5 items-center flex-row">
                           <img
