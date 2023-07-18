@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -9,9 +9,6 @@ export default function LoginScreen() {
   const [password, setPassword] = useState("");
   const [isValidPassword, setIsValidPassword] = useState(true);
   const [name, setName] = useState("");
-  const [logins, setLogins] = useState(false);
-  const [checkpass, setcheckpass] = useState("");
-  // const {setrefresh,setapptoken}=useContext(createContext({}));
 
   const baseURL = "getuser/" + name;
   function readUser() {
@@ -20,12 +17,12 @@ export default function LoginScreen() {
         userName: name,
       })
       .then((response) => {
-        setcheckpass(response.data.Item.password);
-        console.log(password);
-        console.log(checkpass);
-        if (password === checkpass) {
-          setLogins(true);
-          console.log(logins);
+        let chk = response.data.Item.password;
+        if (password === chk) {
+          window.alert("Login Successful");
+          navigation("/home");
+        } else {
+          window.alert("Invalid Email/Password");
         }
       })
       .catch((error) => {
@@ -55,13 +52,7 @@ export default function LoginScreen() {
   };
   const handleSignIn = (e) => {
     if (name && password && isValidPassword) {
-      console.log(name);
       readUser();
-      if (logins) {
-        navigation("/home");
-      } else {
-        window.alert("Invalid Email/Password");
-      }
     } else {
       window.alert("Invalid Email/Password");
     }
@@ -79,7 +70,7 @@ export default function LoginScreen() {
             ></img>
           </div>
           <div className="flex md:w-96 flex-col text-sm rounded-md">
-            <h1 className=" text-white pb-2">Enter Email Id :</h1>
+            <h1 className=" text-white pb-2">Enter Username :</h1>
             <input
               className="rounded-[4px] border p-3 hover:outline-none focus:outline-none"
               type="text"

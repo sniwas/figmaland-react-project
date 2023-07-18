@@ -7,8 +7,8 @@ export default function Fotter() {
         <div className="bg-black mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-1 gap-1 px-1 py-6 lg:py-8 md:grid-cols-4">
             <div>
-              <h2 className="mb-6 text-xl font-medium text-white ">Fingertipe</h2>
-              <ul className="text-white font-normal">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">Fingertipe</h2>
+              <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     Home
@@ -32,8 +32,8 @@ export default function Fotter() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-xl font-medium text-white ">Resources</h2>
-              <ul className="text-white font-normal">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik  ">Resources</h2>
+              <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     Home
@@ -57,8 +57,8 @@ export default function Fotter() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-xl font-medium text-white">About</h2>
-              <ul className="text-white font-normal">
+              <h2 className="mb-6 text-xl font-medium text-white font-graphik ">About</h2>
+              <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
                     Home
@@ -83,7 +83,7 @@ export default function Fotter() {
             </div>
 
             <div>
-              <ul className="text-white font-normal">
+              <ul className="text-white font-graphik  font-normal">
                 <li className="mb-4 flex flex-row">
                   <svg
                     width="32"

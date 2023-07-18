@@ -20,7 +20,7 @@ export default function Header(){
             <FigmaLogo />
           </a>
           <div className="flex md:order-2">
-          <button className=" w-28 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white text-lg transition-colors duration-700 transform  hover:border-4">
+          <button onClick={handleLogin} className=" w-28 p-2 pl-5 pr-5 bg-transparent border-2 border-white text-white font-graphik  text-lg transition-colors duration-700 transform  hover:border-4">
             Login
           </button>
      
@@ -51,26 +51,26 @@ export default function Header(){
           <div className="absolute right-0 mt-2 w-48 bg-black rounded-lg shadow-md py-2 z-10">
             <a
               href="/welcome"
-              className="block px-4 py-2 text-white"
+              className="block px-4 py-2 text-white font-graphik "
               aria-current="page"
             >
               Home
             </a>
             <a
               href="/welcome"
-              className="block px-4 py-2 text-white"
+              className="block px-4 py-2 text-white font-graphik "
             >
               Product
             </a>
             <a
               href="/welcome"
-              className="block px-4 py-2 text-white"
+              className="block px-4 py-2 text-white font-graphik "
             >
               About
             </a>
             <a
               href="/welcome"
-              className="block px-4 py-2 text-white"
+              className="block px-4 py-2 text-white font-graphik "
             >
               Contact
             </a>
@@ -88,7 +88,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white font-graphik  rounded md:bg-transparent md:p-0 "
                   aria-current="page"
                 >
                   Home
@@ -97,7 +97,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0  "
+                  className="block py-2 pl-3 pr-4 text-white font-graphik  rounded  md:p-0  "
                 >
                   Product
                 </a>
@@ -106,7 +106,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white font-graphik  rounded  md:p-0 "
                 >
                   About
                 </a>
@@ -114,7 +114,7 @@ export default function Header(){
               <li>
                 <a
                   href="#"
-                  className="block py-2 pl-3 pr-4 text-white rounded  md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white font-graphik  rounded  md:p-0 "
                 >
                   Contact
                 </a>

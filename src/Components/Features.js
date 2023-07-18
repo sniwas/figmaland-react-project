@@ -5,10 +5,10 @@ export default function Features() {
     <>
       <div className="bg-black flex items-center justify-center w-screen">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">
+          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white font-graphik  md:text-5xl lg:text-6xl ">
             FEATURES
           </h1>
-          <p className="text-white pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
+          <p className="text-white font-graphik  pl-14 pr-14 sm:pl-60 sm:pr-60 xl:pl-80 xl:pr-80 font-normal text-base leading-7 tracking-tight sm:tracking-wider">
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
@@ -21,7 +21,7 @@ export default function Features() {
         </div>
         <div className="w-fill ml-16 lg:ml-8 mt-8 mb-8 justify-center lg:mt-24 lg:mr-16 space-y-4">
           <ul className="flex flex-col items-center space-y-8">
-            <li className="  text-white items-center">
+            <li className="  text-white font-graphik  items-center">
               <div className="flex flex-row">
                 <svg
                   width="32"
@@ -40,14 +40,14 @@ export default function Features() {
                 </h1>
               </div>
               <div>
-                <p className="text-white w-72">
+                <p className="text-white font-graphik  w-72">
                   When you add work to your Slate calendar we automatically
                   calculate useful insights
                 </p>
               </div>
             </li>
 
-            <li className=" text-white items-center ">
+            <li className=" text-white font-graphik  items-center ">
               <div className="flex flex-row">
                 <svg
                   width="34"
@@ -63,13 +63,13 @@ export default function Features() {
                 </svg>
                 <h1 className=" pl-4 text-2xl w-20">Intuitive interface</h1>
               </div>
-              <p className="text-white w-72">
+              <p className="text-white font-graphik  w-72">
                 When you add work to your Slate calendar we automatically
                 calculate useful insights
               </p>
             </li>
 
-            <li className=" text-white items-center">
+            <li className=" text-white font-graphik  items-center">
               <div className="flex flex-row">
                 <svg
                   width="42"
@@ -85,7 +85,7 @@ export default function Features() {
                 </svg>
                 <h1 className=" pl-4 text-2xl">Or with rules</h1>
               </div>
-              <p className="text-white pt-4 w-72">
+              <p className="text-white font-graphik  pt-4 w-72">
                 When you add work to your Slate calendar we automatically
                 calculate useful insights
               </p>

@@ -8,7 +8,7 @@ export default function Testimonials() {
     <div className="md:p-20 mb-10">
       <div className="bg-black flex items-center justify-center">
         <div className="block text-center md:w-4/5 xl:pl-4 xl:pr-4">
-          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white md:text-5xl lg:text-6xl ">
+          <h1 className="block mb-6 pl-20 pr-20 mt-6 lg:pl-60 lg:pr-60 xl:pl-80 xl:pr-80  text-4xl font-semibold leading-none tracking-tight text-white font-graphik  md:text-5xl lg:text-6xl ">
             Testimonials
           </h1>
         </div>
@@ -26,19 +26,19 @@ export default function Testimonials() {
                           <img
                             className="w-12 h-12  rounded-full shadow-lg"
                             src={item.image}
-                            alt="Bonnie image"
-                          />
+                            alt="Bonnie_image"
+                          ></img>
                           <div className="flex flex-col pl-4">
-                            <h5 className="mb-1 text-xl font-medium  text-white">
+                            <h5 className="mb-1 text-xl font-medium  text-white font-graphik ">
                               {item.name}
                             </h5>
-                            <span className="text-sm text-white ">
+                            <span className="text-sm text-white font-graphik  ">
                               {item.position}
                             </span>
                           </div>
                         </div>
                         <div className="p-5">
-                          <p className="mb-3 font-normal text-white">
+                          <p className="mb-3 font-normal text-white font-graphik ">
                             {item.description}
                           </p>
                         </div>
@@ -64,19 +64,19 @@ export default function Testimonials() {
                           <img
                             className="w-12 h-12  rounded-full shadow-lg"
                             src={item.image}
-                            alt="Bonnie image"
+                            alt="Bonnieimage"
                           />
                           <div className="flex flex-col pl-4">
-                            <h5 className="mb-1 text-xl font-medium  text-white">
+                            <h5 className="mb-1 text-xl font-medium  text-white font-graphik ">
                               {item.name}
                             </h5>
-                            <span className="text-sm text-white ">
+                            <span className="text-sm text-white font-graphik  ">
                               {item.position}
                             </span>
                           </div>
                         </div>
                         <div className="p-5">
-                          <p className="mb-3 font-normal text-white">
+                          <p className="mb-3 font-normal text-white font-graphik ">
                             {item.description}
                           </p>
                         </div>
