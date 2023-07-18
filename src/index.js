@@ -14,10 +14,6 @@ import SignUpScreen from './Screens/SignUpScreen';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-  },
-  {
-    path:"/welcome",
     element:<WelcomeScreen/>
   },
   {
